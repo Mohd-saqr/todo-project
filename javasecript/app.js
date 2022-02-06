@@ -28,21 +28,21 @@
   //  var q= prompt("If your answer is yes, do you want to learn?")
   var ask=["Did you graduate from university ?","Are you interested in programming?","Did you now about JAVA language ?","If your answer is yes, do you want to learn?"]
   var Ansr =[];
-  for(let i = ask.length -1;i>=0;i-- ){
-     var t1= prompt(ask[i]);
-    var count = i;
-     while(t1== ""){
-      var t1= prompt(ask[i]);
+  for(let i=0;i<=ask.length -1;i++ ){
+    let t1= prompt(ask[i]);
+    console.log(t1);
+     while(t1 != "yes" && t1!= "no" ||t1== "" ) {
+        t1= prompt(ask[i]);
      }
      Ansr.push(t1)
     
    }
-   
+  
   for(i=0;i<=Ansr.length-1;i++){
     console.log(Ansr[i]);
 
   }
-  alert("Welcom Ammar check the consol now ^____^ ")
+  alert("Welcom ")
   // || q2== "" ||q3== ""||q3== ""
 
    
